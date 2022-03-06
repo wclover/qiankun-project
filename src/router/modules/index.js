@@ -4,7 +4,7 @@ import table from '@/router/modules/table'
 export const constantRoutes = [
   {
     path: '/',
-    redirect: '/record'
+    redirect: '/qiankun'
   },
   {
     path: '/login',

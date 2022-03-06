@@ -1,17 +1,17 @@
 import Layout from '@/layout'
 
 export default {
-  path: '/record',
-  name: 'Record',
+  path: '/qiankun',
+  name: 'QianKun',
   component: Layout,
-  redirect: '/record/index',
-  meta: {title: '记录中心', icon: 'el-icon-menu'},
+  redirect: '/qiankun/record',
+  meta: {title: '乾坤', icon: 'el-icon-menu'},
   children: [
     {
-      path: 'index',
-      name: 'RecordIndex',
+      path: 'record',
+      name: 'QiankunRecord',
       component: () => import('@/views/RecordIndex'),
-      meta: {title: '记录', icon: 'el-icon-location'}
+      meta: {title: '乾坤里的记录', icon: 'el-icon-location'}
     }
   ]
 }
